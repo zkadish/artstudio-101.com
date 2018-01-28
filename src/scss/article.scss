@@ -1,0 +1,42 @@
+#article-page {
+
+  .publish-label {
+    font-size: 14px;
+  }
+
+  .blog-date {
+    font-size: 12px;
+  }
+
+  .article-title {
+    font-size: 1.2rem;
+  }
+
+  .text {
+    padding: 0;
+  }
+
+  .article-content {
+    font-size: .85rem;
+  }
+
+  .previous-posts {
+    padding: 10px 0 10px 10px;
+    margin: 0 0 0 10px;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-width: 0 0 0 1px;
+  }
+
+  .previous-title {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+    font-size: 12px;
+  }
+
+}

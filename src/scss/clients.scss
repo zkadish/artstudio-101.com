@@ -1,0 +1,44 @@
+#clients-page {
+
+  .text {
+    width: 80%;
+    margin: 0 auto 60px;
+  }
+
+  .slide-show-container {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    .over-lay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .list {
+    font-size: .7rem;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  hr {
+    margin: 0 0 5px;
+  }
+
+  .client-list {
+    text-align: center;
+  }
+
+  .word-count {
+    position: relative;
+    top: -20px;
+    margin: 0 0 0 50px;
+  }
+
+}

@@ -1,0 +1,29 @@
+#team-page {
+
+  .quote {
+    width: 575px;
+  }
+
+  .text {
+    width: 90%;
+    margin: 0 auto;
+
+    div {
+      min-height: 140px;
+      font-size: .8rem;
+      min-height: 140px;
+
+      &:nth-child(1) {
+        padding-bottom: 30px;
+      }
+
+      img {
+        margin: 10px 20px 20px 0;
+      }
+
+      strong {
+        font-size: 1rem;
+      }
+    }
+  }
+}

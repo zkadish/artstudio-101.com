@@ -1,0 +1,135 @@
+//*******************************************
+// variables
+//*******************************************
+$medium-gray: #808080;
+$content-width: 800px;
+
+//mixins
+.noselect {
+  user-select: none;
+}
+
+//*******************************************
+// web fonts
+//*******************************************
+@font-face {
+  font-family: 'gothic';
+  src: url('../fonts/gothic.eot');
+  src: local('gothic'),
+  url('../fonts/gothic.woff') format('woff'),
+  url('../fonts/gothic.ttf') format('truetype');
+}
+
+//*******************************************
+// global styles
+//*******************************************
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: gothic !important;
+}
+
+p {
+  font-size: .85rem;
+}
+
+.quote {
+  position: relative;
+  width: 600px;
+  margin: 0 auto 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quote-open {
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  display: none;
+  opacity: .15;
+}
+
+.quote-close {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  display: none;
+  opacity: .15;
+}
+
+//*******************************************
+// carousel
+//*******************************************
+
+.slide-show-one {
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+  height: auto;
+  width: 500px;
+
+  .img {
+    text-align: center;
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//*******************************************
+// contact modal
+//*******************************************
+.reveal-modal {
+  width: 60%;
+}
+
+.reveal-modal, .reveal-modal-bg {
+  position: fixed;
+}
+
+#contact-modal {
+  h2 { margin-left: 15px; }
+  h3 { margin: 0 0 20px 0; line-height: 30px;}
+  form {
+    width: 100%;
+    input {
+      outline: none;
+      padding: 5px 10px;
+      width: 100%;
+    }
+    textarea {
+      border-color: rgb(169, 169, 169);
+      box-shadow: none;
+      font-size: 1rem;
+      padding: 5px 10px;
+    }
+  }
+
+  .address-container {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  button { // override foundation style
+    font-family: gothic !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submit-btn {
+    outline: none;
+    background: rgba(164, 162, 157, 1);
+    border: solid 3px rgb(121, 119, 114);
+    border-radius: 24px;
+    color: #fff;
+    font-size: 2.15rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 180px;
+    margin: 20px 0 0;
+  }
+
+}

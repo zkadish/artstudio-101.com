@@ -1,0 +1,21 @@
+#home-page {
+  // padding-top: 40px;
+  .btn-container {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    // border: 1px solid red;
+  }
+  .new-artists-btn {
+    display: flex;
+    align-items: center;
+    // flex: none;
+    height: 30px;
+    padding: 0 20px;
+    // margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    color: grey;
+  }
+}

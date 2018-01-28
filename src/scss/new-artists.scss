@@ -1,0 +1,51 @@
+#new-artists {
+  .thumbnails-container {
+    display: flex;
+    margin: 0 0 40px;
+    justify-content: center;
+    border: 1px solid red;
+    .thumbnails {
+      width: 600px;
+      display: flex;
+      border: 1px solid green;
+    }
+    .thumbnail {
+      flex: 1;
+      height: 120px;
+      border: 1px solid blue;
+    }
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    box-sizing: border-box;
+    .image-holder {
+      position: relative;
+      // display: flex;
+      // justify-content: center;
+      width: 600px;
+      height: 400px;
+      border: 1px solid green;
+      box-sizing: border-box;
+      .image-one {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 600px;
+        height: 400px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+      }
+      .image-two {
+        position: absolute;
+        top: 0;
+        left: 600px;       
+        width: 600px;        
+        height: 400px;        
+        border: 1px solid blue;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

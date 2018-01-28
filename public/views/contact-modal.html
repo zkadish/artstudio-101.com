@@ -1,0 +1,42 @@
+<div id="contact-modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2>Contact us...</h2>
+    <div class="large-6 columns">
+        <p class="lead">We would love to hear from you!</p>
+        <!-- <form method="POST" action="php/mailer.php" onsubmit="return validateForm()"> -->
+        <form id="contact-form" onsubmit="return validateForm()">
+            <p>
+                <input id="fullname" name="fullname" placeholder="what's your name?">
+            </p>
+            <p>
+                <input id="companyname" name="companyname" placeholder="what company do you work for?">
+            </p>
+            <p>
+                <input id="email" name="email" placeholder="your email address">
+            </p>
+            <p>
+                <input id="subject" name="subject" placeholder="subject">
+            </p>
+            <p>
+                <textarea id="message" name="message" placeholder="your message"></textarea>
+            </p>
+            <div id="myCaptcha"></div>
+            <!--<div class="g-recaptcha" data-sitekey="6LePYSAUAAAAABNHx35SFN1JPPFupM9Jqa481OQa"></div>-->
+            <button id="contact-submit-btn" class="submit-btn" type="submit" name="submit" disabled>submit</button>
+        </form>
+    </div>
+    <div class="large-6 columns">
+        <h3>artstudio 101</h3>
+        <div class="address-container">
+            <address>
+                5103 east thomas road<br>
+                phx, arizona 85018<br>
+                tel: <a href="tel:480.663.0751">480.663.0751</a><br>
+                fax: 480.663.0752<br>
+            </address>
+        </div>
+        <div style="margin-top: 20px;">
+          <img src="img/artist-render.png" />
+        </div>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
