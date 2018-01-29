@@ -1,40 +1,51 @@
 #new-artists {
-  .thumbnails-container {
+  .thumbnail-container {
     display: flex;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
     justify-content: center;
-    border: 1px solid red;
-    .thumbnails {
+    // border: 1px solid red;
+    .thumbnail-set {
       width: 600px;
       display: flex;
-      border: 1px solid green;
+      // border: 1px solid green;
     }
     .thumbnail {
       flex: 1;
-      height: 120px;
-      border: 1px solid blue;
+      height: 112px;
+      margin: 0 10px 0 0;
+      // border: 1px solid blue;
+      box-sizing: border-box;
+      overflow: hidden;
+      &:last-child {
+        margin: 0;
+      }
+      .thumb_image {
+        // width: 240px;
+        max-width: 240px;
+      }
     }
   }
   .image-container {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    // border: 1px solid red;
     box-sizing: border-box;
     .image-holder {
       position: relative;
       // display: flex;
       // justify-content: center;
       width: 600px;
-      height: 400px;
-      border: 1px solid green;
+      height: 805px; // TODO: make height dynamic
+      // border: 1px solid green;
       box-sizing: border-box;
+      overflow: hidden;
       .image-one {
         position: absolute;
         top: 0;
         left: 0;
         width: 600px;
-        height: 400px;
-        border: 1px solid blue;
+        // height: 400px;
+        // border: 1px solid blue;
         box-sizing: border-box;
       }
       .image-two {
@@ -42,8 +53,8 @@
         top: 0;
         left: 600px;       
         width: 600px;        
-        height: 400px;        
-        border: 1px solid blue;
+        // height: 400px;     
+        // border: 1px solid blue;
         box-sizing: border-box;
       }
     }
