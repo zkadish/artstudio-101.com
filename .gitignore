@@ -146,3 +146,5 @@ typings/
 
 # next.js build output
 .next
+
+DEV_NOTES.md
